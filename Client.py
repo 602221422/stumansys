@@ -5,7 +5,7 @@ host=socket.gethostname()
 
 addr=(host,7567)
 
-def conn():
+def conn():		#定义一个函数
     t=socket.socket()#创建一个socket以连接服务器：socket = socket.socket(family, type) 
     t.connect(addr)#.使用socket的connect方法连接服务器
     return t
